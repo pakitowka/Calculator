@@ -83,6 +83,7 @@ public class View {
         jFrame.setContentPane(general);
         jFrame.pack();
         jFrame.setVisible(true);
+        jFrame.setResizable(false);
 
     }
 
