@@ -102,6 +102,7 @@ public class View {
         jFrame.pack();
         jFrame.setVisible(true);
         jFrame.setResizable(false);
+        //jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     }
 
