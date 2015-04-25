@@ -77,7 +77,25 @@ public class View {
         operations.add(jButtonMultiply);
         operations.add(jButtonDivide);
 
-        general.add("East",operations);
+        general.add("East", operations);
+
+        CalcEngine calcEngine = new CalcEngine(this);
+        jButton0.addActionListener(calcEngine);
+        jButton1.addActionListener(calcEngine);
+        jButton2.addActionListener(calcEngine);
+        jButton3.addActionListener(calcEngine);
+        jButton4.addActionListener(calcEngine);
+        jButton5.addActionListener(calcEngine);
+        jButton6.addActionListener(calcEngine);
+        jButton7.addActionListener(calcEngine);
+        jButton8.addActionListener(calcEngine);
+        jButton9.addActionListener(calcEngine);
+        jButtonPoint.addActionListener(calcEngine);
+        jButtonPlus.addActionListener(calcEngine);
+        jButtonMinus.addActionListener(calcEngine);
+        jButtonDivide.addActionListener(calcEngine);
+        jButtonMultiply.addActionListener(calcEngine);
+        jButtonEqual.addActionListener(calcEngine);
 
         JFrame jFrame = new JFrame("View");
         jFrame.setContentPane(general);
